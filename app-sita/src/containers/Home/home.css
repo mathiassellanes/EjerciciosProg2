@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+#root {
+    width: 100%;
+    height: 100vh
+}
+
+.MuiModal-root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home{
+    display: flex;
+    width: 100%;   
+    animation: aparecer 1s;
+    font-family: 'Noto Sans JP', sans-serif;
+    flex-direction: column;
+    background-color: #EDEEFA;
+}
+
+.home_post{
+    margin: 20px 0 0 0;
+    background-color: #EDEEFA;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.container {
+    display: flex;
+    background-color: #EDEEFA;
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+}
+
+.home_button {
+    width: max-content;
+    height: max-content;
+    padding: 2%;
+    background-color: #3243fc;
+    border: #000eac 1px solid;
+    border-radius: 10px;
+    color: #fff;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+.home_button_add {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    padding: 1% 2%;
+    background-color: #3243fc;
+    border: #000eac 1px solid;
+    border-radius: 10px;
+    color: #fff;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDEEFA;
+    width: 250px;
+    height: 100px;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0%;
+        rotate: 100;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+td {
+    
+    text-align: center;
+}
+
+tr {
+    border-bottom: 1px solid #000eac;
+}
